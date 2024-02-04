@@ -1,0 +1,123 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+  body {
+    margin: 0; /* Redefine as margens para evitar margens indesejadas */
+    padding: 0; /* Redefine o preenchimento para evitar preenchimento indesejado */
+    font-family: Arial, sans-serif; /* Escolhe uma fonte */
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .performance-matrix {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Unidades relativas para o tamanho das colunas */
+    gap: 10px;
+    border: 2px solid black;
+    padding: 10px;
+  }
+
+  .performance-square {
+    margin: 5px;
+    width: 150px;
+    height: 150px;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    transition: transform 0.3s; /* Adicione a propriedade de transição para suavizar a animação */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Aqui você adiciona a sombra ao texto */
+    }
+
+  .performance-square:hover {
+    transform: scale(1.1); /* Aplique uma escala maior ao elemento no hover */
+  }
+
+  .performance-image {
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 5px;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  .square-1 {
+    background-color: deepskyblue;
+  }
+
+  .square-2 {
+    background-color: yellowgreen;
+  }
+
+  .square-3 {
+    background-color: forestgreen;
+    font-size: 16px; /* Mantém o estilo "Alto Potencial" */
+  }
+
+  .square-4 {
+    background-color: orange;
+  }
+
+  .square-5 {
+    background-color: deepskyblue;
+  }
+
+  .square-6 {
+    background-color: yellowgreen;
+  }
+
+  .square-7 {
+    background-color: red;
+  }
+
+  .square-8 {
+    background-color: orange;
+  }
+
+  .square-9 {
+    background-color: deepskyblue;
+  }
+
+  .alto-potencial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .alto {
+    font-weight: bold;
+  }
+
+  .potencial {
+    font-weight: normal;
+  }
+
+  .footer {
+    margin-top: 20px;
+  }
